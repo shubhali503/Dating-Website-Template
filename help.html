@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><i class="fa-regular fa-heart"></i> Ready4Love</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="member.html">Member</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="privacy.html">Privacy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <select class="form-select form-control d-flex selectlang" aria-label="Default select example">
+                  <option selected>English</option>
+                  <option>Dansk</option>
+                  <option>Deutsch</option>
+                  <option>English (UK)</option>
+                  <option>Harvatski</option>
+                  <option>Italiano</option>
+                  <option>Nederlands</option>
+                </select>
+                <button type="button" class="btn btn-outline-light d-flex" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+                <button type="button" class="btn btn-outline-light d-flex" id="regbutton" onclick="window.location.href='register.html'">
+                  Register
+              </button>
+               </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="help">
+            <div class="container">
+                <h2 class="mb-4">Welcome to the Help Center</h2>
+                <h4 class="mb-4">How Can We Help You?</h4>
+                <div class="form-group has-search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control" placeholder="Type in a question">
+                </div>
+            </div>
+        </section>
+            
+        <section id="helpinfo">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <button type="button" class="btn btn-outline-primary">Getting Started</button>
+                </div>
+                <div class="grid-item">
+                    <button type="button" class="btn btn-outline-primary">Profile and Account</button>
+                </div>
+                <div class="grid-item">
+                    <button type="button" class="btn btn-outline-primary">Safety and Security</button>
+                </div>
+                <div class="grid-item">
+                    <button type="button" class="btn btn-outline-primary">Premium Subscription</button>
+                </div>
+                <div class="grid-item">
+                    <button type="button" class="btn btn-outline-primary">Troubleshooting</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="popularq">
+            <div class="container">
+                <h3 class="mb-4">Popular Questions</h3>
+                <ol>
+                    <li>
+                        <a data-bs-toggle="collapse" href="#answer1" role="button" aria-expanded="false" aria-controls="collapseExample">How does Ready4Love work?</a>
+                        <div class="collapse mt-2" id="answer1">
+                            <div class="card card-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque sint nulla. Vero voluptatibus nulla eaque, corporis libero architecto odio repudiandae ipsa fugiat, eligendi, in qui quisquam nemo rem officia.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" href="#answer2" role="button" aria-expanded="false" aria-controls="collapseExample">How can I change my password?</a>
+                        <div class="collapse mt-2" id="answer2">
+                            <div class="card card-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque sint nulla. Vero voluptatibus nulla eaque, corporis libero architecto odio repudiandae ipsa fugiat, eligendi, in qui quisquam nemo rem officia.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" href="#answer3" role="button" aria-expanded="false" aria-controls="collapseExample">How can I change my location?</a>
+                        <div class="collapse mt-2" id="answer3">
+                            <div class="card card-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque sint nulla. Vero voluptatibus nulla eaque, corporis libero architecto odio repudiandae ipsa fugiat, eligendi, in qui quisquam nemo rem officia.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" href="#answer4" role="button" aria-expanded="false" aria-controls="collapseExample">How to reactivate my deleted profile?</a>
+                        <div class="collapse mt-2" id="answer4">
+                            <div class="card card-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque sint nulla. Vero voluptatibus nulla eaque, corporis libero architecto odio repudiandae ipsa fugiat, eligendi, in qui quisquam nemo rem officia.
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a data-bs-toggle="collapse" href="#answer5" role="button" aria-expanded="false" aria-controls="collapseExample">I've forgotten my password. What do I do?</a>
+                        <div class="collapse mt-2" id="answer5">
+                            <div class="card card-body">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque sint nulla. Vero voluptatibus nulla eaque, corporis libero architecto odio repudiandae ipsa fugiat, eligendi, in qui quisquam nemo rem officia.
+                            </div>
+                        </div>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+          <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+          <p>
+            &copy; Ready4Love 2022 
+          </p>
+        </div>
+      </footer>
+
+      <!-- Login Form -->
+  
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex flex-column text-center">
+                <form>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                  </div>
+                  <button type="button" class="btn btn-primary btn-block btn-round" onclick="window.location.href='profile.html'">Login</button>
+                </form>
+                
+                <div class="text-center text-muted delimiter mt-3">or use a social network</div>
+                <div class="social-buttons">
+                  <a href="" class="btn btn-danger"><i class="fa-brands fa-google"></i></a>
+                  <a href="" class="btn btn-primary"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="" class="btn btn-info"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <div class="signup-section">Not a member yet? <a href="register.html" class="text-primary">Sign Up</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
